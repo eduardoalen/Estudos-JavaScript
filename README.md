@@ -1,1 +1,1 @@
-# Anotações sobre meu estudo em JavaScript
+# Anotações sobre meu estudo em JavaScript :)
