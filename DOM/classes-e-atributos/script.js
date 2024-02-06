@@ -15,3 +15,24 @@ if(menuu.classList.contains('azul')) {
 } else {
   menuu.classList.add('nao-possui-azul');
 }
+
+
+const menu = document.querySelector('.menu');
+
+// substitui todas as classes pela classe ativo, teste e azul
+menu.className = 'ativo teste azul'
+
+// Adicionar uma nova classe, sem remover as que já existem
+menu.className = menu.className + ' vermelho';
+// ou
+// menu.className += ' vermelho'
+
+console.log(menu.className);
+
+const oculos = document.querySelector('.oculos');
+
+console.log(oculos.attributes.class);
+
+console.log(oculos.attributes.id);
+
+console.log(oculos.attributes['data-texto']);
