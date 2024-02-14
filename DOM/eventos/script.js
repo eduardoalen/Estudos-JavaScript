@@ -34,5 +34,8 @@ function callback(event) {
     console.log(event.type, event);
 }
 
-// h1.addEventListener('mouseenter', callback);
+h1.addEventListener('mouseenter', callback); // executar só na primeira vez que você passa o mouse 
+window.addEventListener('mousemove', callback); // executa a função a cada movimento que você der no elemento
+
 window.addEventListener('scroll', callback);
+h1.addEventListener('resize', callback);
