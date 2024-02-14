@@ -22,7 +22,9 @@ const linkExterno = document.querySelector('a[href^="https"]');
 
 function handleLinkExterno(event) {
     event.preventDefault();
-    console.log(event);
+    console.log(this); // vai retornar o elemento a
+    // retorna a mesma coisa se fosse o event.currentTarget
 }
 
 linkExterno.addEventListener('click', handleLinkExterno);
+
