@@ -34,8 +34,17 @@ function callback(event) {
     console.log(event.type, event);
 }
 
-h1.addEventListener('mouseenter', callback); // executar só na primeira vez que você passa o mouse 
-window.addEventListener('mousemove', callback); // executa a função a cada movimento que você der no elemento
+// h1.addEventListener('mouseenter', callback); // executar só na primeira vez que você passa o mouse 
+// // window.addEventListener('mousemove', callback); // executa a função a cada movimento que você der no elemento
 
-window.addEventListener('scroll', callback);
-h1.addEventListener('resize', callback);
+// window.addEventListener('scroll', callback);
+// window.addEventListener('resize', callback);
+//Como adicionar a atalhos para facilitar a navegação do seu site (teclas do teclado)
+
+function handleKeyboard(event) {
+    if(event.key === 'r') {
+        document.body.classList.toggle('rosa');
+    }
+}
+
+window.addEventListener('keydown', handleKeyboard);
