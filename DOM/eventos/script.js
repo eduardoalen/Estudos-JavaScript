@@ -26,7 +26,7 @@ function handleLinkExterno(event) {
     // retorna a mesma coisa se fosse o event.currentTarget
 }
 
-linkExterno.addEventListener('click', handleLinkExterno);
+// linkExterno.addEventListener('click', handleLinkExterno);
 
 const h1 = document.querySelector('h1');
 
@@ -48,3 +48,13 @@ function handleKeyboard(event) {
 }
 
 window.addEventListener('keydown', handleKeyboard);
+
+const imgs = document.querySelectorAll('img');
+
+function handleImg(event) {
+    console.log(event.target.getAttribute('src')); // retorna o elemento clicado
+}
+
+imgs.forEach((img) => {
+    img.addEventListener('click', handleImg);
+});
